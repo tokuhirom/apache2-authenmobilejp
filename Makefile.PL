@@ -2,7 +2,8 @@ use inc::Module::Install;
 name 'Apache2-AuthenMobileJP';
 all_from 'lib/Apache2/AuthenMobileJP.pm';
 
-# requires '';
+requires 'HTTP::MobileAttribute';
+requires 'Net::CIDR::MobileJP';
 
 tests 't/*.t';
 author_tests 'xt';
